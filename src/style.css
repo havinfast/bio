@@ -91,7 +91,7 @@ a:hover {
 
 .text {
     margin: 10px 5px 0 0;
-    opacity: 0.8;
+    
 }
 
 .name {
@@ -117,12 +117,18 @@ a:hover {
 }
 
 .address {
-    opacity: 0.8;
+    display: flex;
+   
     margin-top: 20px;
     padding: 0 30px;
 }
 
+.fa-solid .fa-location-dot {
+    color: #ff2828 !important;
+}
+
 .address i {
+    margin-left: 4px;
     color: var(--text-light-color);
 }
 .dark-mode .address i {

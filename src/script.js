@@ -58,7 +58,7 @@ fetch("https://raw.githubusercontent.com/havinfast/bio/refs/heads/main/data.json
         address.innerHTML = data.DiaChi;
 
         const contactList = data.LienHe.map((item) => {
-            let link = item.Link;
+            let link = item.Link.replaceAll(" ","");
             let LinkHienThi = item.Link;
             if (LinkHienThi.includes("https://www.")) {
                 LinkHienThi = LinkHienThi.replace("https://www.", "https://");
@@ -69,6 +69,7 @@ fetch("https://raw.githubusercontent.com/havinfast/bio/refs/heads/main/data.json
             if (LinkHienThi.includes("www.")) {
                 LinkHienThi = LinkHienThi.replace("www.", "");
             }
+            
             if (/^\d+$/.test(link)) {
                 link = "https://zalo.me/" + link;
             }

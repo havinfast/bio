@@ -117,13 +117,11 @@ a:hover {
 }
 
 .address {
-    display: flex;
-   
-    margin-top: 20px;
+    margin-top: 5px;
     padding: 0 30px;
 }
 
-.fa-solid .fa-location-dot {
+.dot-place {
     color: #ff2828 !important;
 }
 
@@ -131,9 +129,9 @@ a:hover {
     margin-left: 4px;
     color: var(--text-light-color);
 }
-.dark-mode .address i {
+.dark-mode .address .ad {
     color: #fff;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .avatar-bg {
@@ -188,7 +186,7 @@ a:hover {
 .card-contact-img img {
     width: 44px;
     height: 44px;
-    border-radius: 9999px;
+    border-radius: 8px;
     object-fit: cover;
 }
 

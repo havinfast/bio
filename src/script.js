@@ -47,7 +47,7 @@ const contact = $(".contact");
 const avatarBg = $(".avatar-img-bg");
 const avatar = $(".avatar-img");
 
-fetch("../data.json")
+fetch("https://raw.githubusercontent.com/havinfast/bio/refs/heads/main/data.json")
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
